@@ -6,3 +6,111 @@
 
 /*==================== scroll reveal ====================*/
 /*==================== typed js ====================*/
+
+const headerNew = document.createElement("header");
+const aNew = document.createElement("a");
+aNew.href = "#";
+aNew.setAttribute( "class", "logo");
+
+const iNew = document.createElement("i");
+iNew.setAttribute("class", "box-menu") 
+iNew.setAttribute( "id", "menu-icon")
+
+const navNew = document.createElement("nav");
+navNew.setAttribute("class", "navbar")
+const aHome = document.createElement("a");
+aHome.href = "#home";
+aHome.setAttribute("class", "active");
+
+const aAbout = document.createElement("a");
+aAbout.href = "#about";
+const aServices = document.createElement("a");
+aServices.href = "#services";
+const aPortfolio = document.createElement("a");
+aPortfolio.href = "#portfolio";
+const aContact = document.createElement("a");
+aContact.href = "#contact";
+
+
+headerNew.append(aNew, iNew, navNew)
+navNew.append( aHome, aAbout, aServices, aPortfolio, aContact)
+
+console.log(headerNew)
+
+
+
+const sectionNew = document.createElement("section");
+sectionNew.setAttribute("class", "home");
+sectionNew.setAttribute("id", "home");
+
+const divSection = document.createElement("div");
+divSection.setAttribute("class", "home-content");
+
+sectionNew.append(divSection)
+const h3New = document.createElement("h3");
+h3New.textContent = "Hello, It's Me";
+const h1new = document.createElement("h1");
+h1new.textContent = "Dharampreet Singh Sandhu";
+const h3Second = document.createElement("h3");
+h3Second.textContent = "And I'm a ";
+const spanTag = document.createElement("span");
+spanTag.textContent = "Frontend Engineer";
+h3Second.append(spanTag)
+const pNew = document.createElement("p");
+pNew.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, molestiae" ;
+
+divSection.append(h3New, h1new, h3Second, pNew);
+
+const divSocial = document.createElement("div");
+divSocial.setAttribute("class", "social-media");
+divSection.append(divSocial)
+
+const aFacebook = document.createElement("a");
+aFacebook.href = "#"
+divSocial.append(aFacebook)
+const fbi = document.createElement("i");
+fbi.setAttribute("class", "bx bxl-facebook");
+aFacebook.append(fbi)
+
+const aTwitter = document.createElement("a");
+aTwitter.href = "#";
+divSocial.append(aTwitter);
+const twi = document.createElement("i");
+twi.setAttribute("class", "bx bxl-twitter");
+aTwitter.append(twi)
+
+const aInstagram = document.createElement("a");
+aInstagram.href = "#";
+divSocial.append(aInstagram);
+const inst = document.createElement("i");
+inst.setAttribute("class", "bx bxl-twitter");
+aInstagram.append(inst)
+
+const aLinkedin = document.createElement("a");
+aLinkedin.href = "#";
+divSocial.append(aLinkedin);
+const link = document.createElement("i");
+link.setAttribute("class", "bx bxl-twitter");
+aLinkedin.append(link)
+
+const aBtn = document.createElement("a");
+aBtn.href = "#";
+aBtn.setAttribute("class", "btn");
+aBtn.textContent = "Download CV";
+divSection.append(aBtn);
+
+const divImage = document.createElement("div");
+divImage.setAttribute("class", "home-img");
+
+sectionNew.append(divImage);
+const imgTag = document.createElement("img");
+imgTag.src = "./images/personal-portfolio-pic.png" ;
+divImage.append(imgTag);
+
+const selectBody = document.querySelector("body");
+selectBody.append(headerNew)
+selectBody.append(sectionNew)
+
+console.log(selectBody)
+//console.log(sectionNew)
+
