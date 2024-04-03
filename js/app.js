@@ -99,14 +99,14 @@ const aInstagram = document.createElement("a");
 aInstagram.href = "#";
 divSocial.append(aInstagram);
 const inst = document.createElement("i");
-inst.setAttribute("class", "bx bxl-twitter");
+inst.setAttribute("class", "bx bxl-instagram");
 aInstagram.append(inst)
 
 const aLinkedin = document.createElement("a");
 aLinkedin.href = "#";
 divSocial.append(aLinkedin);
 const link = document.createElement("i");
-link.setAttribute("class", "bx bxl-twitter");
+link.setAttribute("class", "bx bxl-linkedin");
 aLinkedin.append(link)
 
 const aBtn = document.createElement("a");
