@@ -8,9 +8,11 @@
 /*==================== typed js ====================*/
 
 const headerNew = document.createElement("header");
+headerNew.setAttribute("class", "header")
 const aNew = document.createElement("a");
 aNew.href = "#";
 aNew.setAttribute( "class", "logo");
+aNew.textContent = "Portfolio";
 
 const iNew = document.createElement("i");
 iNew.setAttribute("class", "box-menu") 
@@ -21,19 +23,33 @@ navNew.setAttribute("class", "navbar")
 const aHome = document.createElement("a");
 aHome.href = "#home";
 aHome.setAttribute("class", "active");
+aHome.textContent = "Home"
 
 const aAbout = document.createElement("a");
 aAbout.href = "#about";
+aAbout.textContent = "About";
 const aServices = document.createElement("a");
 aServices.href = "#services";
+aServices.textContent = "Services"
 const aPortfolio = document.createElement("a");
 aPortfolio.href = "#portfolio";
+aPortfolio.textContent = "Portfolio";
 const aContact = document.createElement("a");
 aContact.href = "#contact";
+aContact.textContent = "Contact"
 
 
-headerNew.append(aNew, iNew, navNew)
-navNew.append( aHome, aAbout, aServices, aPortfolio, aContact)
+//headerNew.append(aNew, iNew, navNew)
+//navNew.append( aHome, aAbout, aServices, aPortfolio, aContact)
+
+headerNew.append(aNew)
+headerNew.append(iNew)
+headerNew.append(navNew)
+navNew.append(aHome);
+navNew.append(aAbout)
+navNew.append(aServices)
+navNew.append(aPortfolio)
+navNew.append(aContact)
 
 console.log(headerNew)
 
@@ -111,6 +127,6 @@ const selectBody = document.querySelector("body");
 selectBody.append(headerNew)
 selectBody.append(sectionNew)
 
-console.log(selectBody)
-//console.log(sectionNew)
+console.log(headerNew)
+console.log(sectionNew)
 
