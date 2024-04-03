@@ -73,7 +73,7 @@ const spanTag = document.createElement("span");
 spanTag.textContent = "Frontend Engineer";
 h3Second.append(spanTag)
 const pNew = document.createElement("p");
-pNew.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, molestiae" ;
+pNew.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, molestiae modi magni similique laudantium.Laborum, nulla quis!";
 
 divSection.append(h3New, h1new, h3Second, pNew);
 
