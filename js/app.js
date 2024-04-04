@@ -42,7 +42,7 @@ aContact.textContent = "Contact"
 //headerNew.append(aNew, iNew, navNew)
 //navNew.append( aHome, aAbout, aServices, aPortfolio, aContact)
 
-headerNew.append(aNew)
+/*headerNew.append(aNew)
 headerNew.append(iNew)
 headerNew.append(navNew)
 navNew.append(aHome);
@@ -129,4 +129,4 @@ selectBody.append(sectionNew)
 
 console.log(headerNew)
 console.log(sectionNew)
-
+*/
