@@ -78,12 +78,27 @@ body {
     align-items: center;
     margin-left: 10px;
     margin-top: 10%;
+    margin-left: 4rem;
 }
 
 .home-img img {
-    width: 30vw;
-    margin-left: 10px;
+    width: 35vw;
+    /*margin-left: 10px;*/
+    animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -154,10 +169,14 @@ body {
 }
 .about-img img {
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+    margin-top: 3rem;
 }
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
+    /*margin-top: 2rem;*/
 }
 .about-content h2 {
     text-align: left;
@@ -184,6 +203,9 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 5rem;
+    padding-bottom: 8rem ;/*16rem*/
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .services-container .services-box{
@@ -194,6 +216,7 @@ body {
     border: .2rem solid var(--bg-color);
     transition: 0.5s ease;
     border-radius: 2rem;
+   
 }
 .services-container .services-box:hover {
     border-color: var(--main-color);
@@ -215,7 +238,9 @@ body {
     background: var(--second-bg-color);
 }
 .portfolio h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    
 }
 .portfolio-container {
     display: grid;
@@ -230,11 +255,14 @@ body {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .portfolio-box img {
     width: 100%; 
     transition: .5s ease; 
+    
 }
 
 .portfolio-box img:hover {
@@ -257,9 +285,10 @@ body {
     transform: translate(100%);
     transition: .5s ease;
 }
-.portfolio-box:hover .portfolio-layer:hover {
+.portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 }
+
 
 .portfolio-layer h4 {
     font-size: 3rem;
@@ -283,8 +312,12 @@ body {
     color: var(--second-bg-color);
 }
 
+#portfolio-2 {
+    height: 21vw;
+}
 .contact h2 {
     margin-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 .contact form {
@@ -349,4 +382,153 @@ body {
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+   header {
+    padding: 2rem 3%;
+   }
+   
+   section {
+    padding: 10rem 3% 2rem;
+   }
+
+   .services {
+    padding-bottom: 7rem;
+    /*margin-top: -8rem;*/
+    
+   }
+
+   .footer {
+    padding: 2rem 3%;
+   }
+
+   .portfolio {
+    padding-bottom: 7rem;
+   }
+
+   .contact {
+    min-height: auto;
+   }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: (var(--bg-color));
+        border-top: 1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar .active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home h3 {
+        font-size: 2.6rem;
+    }
+
+    .home h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+        margin-right: 12rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .services h2 {
+        margin-top: -3rem;
+        padding-bottom: 4rem;
+    }
+
+    .portfolio h2 {
+       /* margin-bottom: 3rem;*/
+        padding-bottom: 6rem;
+        line-height: .3;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact h2 {
+        margin-top: -4rem;
+    }
+}
+@media (max-width: 615px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .contact h2 {
+        margin-top: -6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .portfolio h2 {
+        margin-top: -5rem;
+    }
+    .contact form .input-box input {
+        width: 100%;    
+    }
+    
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+    .about img {
+        width: 90vw;
+    }
+    .services {
+        padding-top: 8rem;
+        margin-bottom: -5rem;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
