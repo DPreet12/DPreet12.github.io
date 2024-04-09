@@ -78,12 +78,12 @@ body {
     align-items: center;
     margin-left: 10px;
     margin-top: 10%;
-    margin-left: 4rem;
+    
 }
 
 .home-img img {
-    width: 35vw;
-    /*margin-left: 10px;*/
+    width: 30vw;
+    margin-left: 15px;
     animation: floatImage 4s ease-in-out infinite;
 }
 
