@@ -154,7 +154,6 @@ body {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: 0.5s ease;
-    cursor: pointer;
 }
 
 .btn:hover {
@@ -207,18 +206,17 @@ body {
     padding-bottom: 8rem ;/*16rem*/
     margin-left: 1rem;
     margin-right: 1rem;
-    
 }
 
 .services-container .services-box{
     flex: 1 1 30rem;
     background: var(--second-bg-color);
-    padding: 3rem 2rem 3rem;
+    padding: 3rem 2rem 4rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: 0.5s ease;
     border-radius: 2rem;
-    
+   
 }
 .services-container .services-box:hover {
     border-color: var(--main-color);
@@ -233,9 +231,8 @@ body {
     margin-bottom: 1.5rem;
 }
 .services-box p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 1.5rem;
-    
 }
 .portfolio {
     background: var(--second-bg-color);
@@ -319,7 +316,6 @@ body {
 #portfolio-1, #portfolio-2 {
     height: 45vh;
 }
-/*
 .contact h2 {
     margin-bottom: 3rem;
     padding-top: 2rem;
@@ -355,68 +351,7 @@ body {
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
-}*/
-
-
-.contact h2 {
-    margin-bottom: 3rem;
-    padding-top: 2rem;
-  }
-  
-  .contact form {
-      max-width: 70rem;
-     /*border: 2px solid salmon;*/
-      text-align: center;
-      margin: 1rem auto;
-      margin-bottom: 1rem;
-  }
-  
-  form .input-box {
-      display: flex;
-      justify-content: space-between;
-     /*flex-wrap: wrap;*/
-  }
-  .input-box .input-field {
-      width:49%;
-    /* border: 2px solid salmon;*/
-  }
-  .field .item {
-      
-      width: 100%;
-      background: transparent;
-      background-color: var(--second-bg-color);
-      outline: none;
-      border-radius: .8rem;
-      font-size: 1.6rem;
-      padding: 1.4rem;
-      color: #ededed;
-      margin: .6rem 0;
-  }
-  .field .item::placeholder {
-      color:  rgba(255,255,255,.3);
-  }
-  
-  .field.error .item {
-    border-color: #d93025;
-  }
-
-  .field .error-txt {
-      font-size: 1.5rem;
-     /* border: 2px solid green;*/
-      color: #d93025;
-      text-align: left;
-     margin: -.5rem 0 1rem;
-     display: none;
-  }
-
-  .field.error .error-txt{
-    display: block;
-  }
-  
-  form .textarea-field .item {
-      resize: none;
-      
-  }
+}
 
 .footer {
     display: flex;
