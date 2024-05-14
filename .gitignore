@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+#For username and password
+keys.js
+
+#For environment variable
+.env
+
