@@ -1,0 +1,2 @@
+const EMAIL_USERNAME = "dharampreetsinghsandhu236@gmail.com";
+const EMAIL_PASSWORD = "2E262147EC7A70F80687378B26DE25F207F7";
